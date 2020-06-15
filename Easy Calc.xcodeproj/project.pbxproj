@@ -13,7 +13,21 @@
 		5553FED72497A05B008C5919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5553FED52497A05B008C5919 /* Main.storyboard */; };
 		5553FED92497A05C008C5919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5553FED82497A05C008C5919 /* Assets.xcassets */; };
 		5553FEDC2497A05C008C5919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5553FEDA2497A05C008C5919 /* LaunchScreen.storyboard */; };
+		55ED7E4B2497B0AD009E8E6D /* wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED7E4A2497B0AD009E8E6D /* wage.swift */; };
+		55ED7E532497B183009E8E6D /* Easy_CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED7E522497B183009E8E6D /* Easy_CalcTests.swift */; };
+		55ED7E5B2497B1B4009E8E6D /* currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED7E5A2497B1B4009E8E6D /* currency.swift */; };
+		55ED7E5C2497B1D3009E8E6D /* wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ED7E4A2497B0AD009E8E6D /* wage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55ED7E552497B183009E8E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5553FEC42497A05B008C5919 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5553FECB2497A05B008C5919;
+			remoteInfo = "Easy Calc";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5553FECC2497A05B008C5919 /* Easy Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +38,22 @@
 		5553FED82497A05C008C5919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5553FEDB2497A05C008C5919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5553FEDD2497A05C008C5919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55ED7E4A2497B0AD009E8E6D /* wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wage.swift; sourceTree = "<group>"; };
+		55ED7E502497B183009E8E6D /* Easy CalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy CalcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55ED7E522497B183009E8E6D /* Easy_CalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_CalcTests.swift; sourceTree = "<group>"; };
+		55ED7E542497B183009E8E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55ED7E5A2497B1B4009E8E6D /* currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5553FEC92497A05B008C5919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55ED7E4D2497B183009E8E6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				5553FECE2497A05B008C5919 /* Easy Calc */,
+				55ED7E512497B183009E8E6D /* Easy CalcTests */,
 				5553FECD2497A05B008C5919 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				5553FECC2497A05B008C5919 /* Easy Calc.app */,
+				55ED7E502497B183009E8E6D /* Easy CalcTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +84,58 @@
 		5553FECE2497A05B008C5919 /* Easy Calc */ = {
 			isa = PBXGroup;
 			children = (
+				5553FEEC2497A121008C5919 /* Model */,
+				5553FEEB2497A11A008C5919 /* View */,
+				5553FEEA2497A105008C5919 /* Controller */,
+				5553FEE82497A0D8008C5919 /* New Group */,
 				5553FECF2497A05B008C5919 /* AppDelegate.swift */,
 				5553FED12497A05B008C5919 /* SceneDelegate.swift */,
-				5553FED32497A05B008C5919 /* ViewController.swift */,
 				5553FED52497A05B008C5919 /* Main.storyboard */,
 				5553FED82497A05C008C5919 /* Assets.xcassets */,
 				5553FEDA2497A05C008C5919 /* LaunchScreen.storyboard */,
 				5553FEDD2497A05C008C5919 /* Info.plist */,
 			);
 			path = "Easy Calc";
+			sourceTree = "<group>";
+		};
+		5553FEE82497A0D8008C5919 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		5553FEEA2497A105008C5919 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5553FED32497A05B008C5919 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5553FEEB2497A11A008C5919 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55ED7E5A2497B1B4009E8E6D /* currency.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5553FEEC2497A121008C5919 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55ED7E4A2497B0AD009E8E6D /* wage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55ED7E512497B183009E8E6D /* Easy CalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				55ED7E522497B183009E8E6D /* Easy_CalcTests.swift */,
+				55ED7E542497B183009E8E6D /* Info.plist */,
+			);
+			path = "Easy CalcTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +158,24 @@
 			productReference = 5553FECC2497A05B008C5919 /* Easy Calc.app */;
 			productType = "com.apple.product-type.application";
 		};
+		55ED7E4F2497B183009E8E6D /* Easy CalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55ED7E572497B183009E8E6D /* Build configuration list for PBXNativeTarget "Easy CalcTests" */;
+			buildPhases = (
+				55ED7E4C2497B183009E8E6D /* Sources */,
+				55ED7E4D2497B183009E8E6D /* Frameworks */,
+				55ED7E4E2497B183009E8E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55ED7E562497B183009E8E6D /* PBXTargetDependency */,
+			);
+			name = "Easy CalcTests";
+			productName = "Easy CalcTests";
+			productReference = 55ED7E502497B183009E8E6D /* Easy CalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +188,10 @@
 				TargetAttributes = {
 					5553FECB2497A05B008C5919 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					55ED7E4F2497B183009E8E6D = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 5553FECB2497A05B008C5919;
 					};
 				};
 			};
@@ -116,6 +209,7 @@
 			projectRoot = "";
 			targets = (
 				5553FECB2497A05B008C5919 /* Easy Calc */,
+				55ED7E4F2497B183009E8E6D /* Easy CalcTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +225,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55ED7E4E2497B183009E8E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +240,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				5553FED42497A05B008C5919 /* ViewController.swift in Sources */,
+				55ED7E5B2497B1B4009E8E6D /* currency.swift in Sources */,
+				55ED7E4B2497B0AD009E8E6D /* wage.swift in Sources */,
 				5553FED02497A05B008C5919 /* AppDelegate.swift in Sources */,
 				5553FED22497A05B008C5919 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55ED7E4C2497B183009E8E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55ED7E532497B183009E8E6D /* Easy_CalcTests.swift in Sources */,
+				55ED7E5C2497B1D3009E8E6D /* wage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55ED7E562497B183009E8E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5553FECB2497A05B008C5919 /* Easy Calc */;
+			targetProxy = 55ED7E552497B183009E8E6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5553FED52497A05B008C5919 /* Main.storyboard */ = {
@@ -316,6 +436,46 @@
 			};
 			name = Release;
 		};
+		55ED7E582497B183009E8E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GJM8829Q7N;
+				INFOPLIST_FILE = "Easy CalcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gokulnair.Easy-CalcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easy Calc.app/Easy Calc";
+			};
+			name = Debug;
+		};
+		55ED7E592497B183009E8E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GJM8829Q7N;
+				INFOPLIST_FILE = "Easy CalcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gokulnair.Easy-CalcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easy Calc.app/Easy Calc";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +493,15 @@
 			buildConfigurations = (
 				5553FEE12497A05C008C5919 /* Debug */,
 				5553FEE22497A05C008C5919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55ED7E572497B183009E8E6D /* Build configuration list for PBXNativeTarget "Easy CalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55ED7E582497B183009E8E6D /* Debug */,
+				55ED7E592497B183009E8E6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
